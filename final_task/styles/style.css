@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #292F36;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #292F36;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.container-stripes {
+  width: 1200px;
+  margin: 0 auto;
+  background: url("../img/background_stripes.svg") center no-repeat;
+  background-size: cover;
+}
+
+.site-header {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.site-header__link-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+.site-header__link-item {
+  font-size: 20px;
+}
+
+.site-logo {
+  width: 177px;
+  height: 50px;
+}
+.site-logo_footer {
+  margin-bottom: 20px;
+}
+
+.main-banner {
+  height: 758px;
+  background: url("../img/main-banner.png") center no-repeat;
+  background-size: 1200px;
+  padding-top: 210px;
+  padding-left: 50px;
+}
+.main-banner__title {
+  font-family: "DM Serif Display";
+  font-size: 65px;
+  font-weight: 400;
+  width: 435px;
+  line-height: 81.25px;
+  margin-bottom: 18px;
+}
+.main-banner__subtitle {
+  width: 435px;
+  font-size: 22px;
+  ine-height: 33px;
+  letter-spacing: 0.22px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 26px 75px 26px 48px;
+  border-radius: 18px;
+  background: url("../img/arrow-right_brown.svg") #292F36 no-repeat center right 20%;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.5px;
+  letter-spacing: 0.36px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-position: center right 15%;
+}
+
+.our-projects {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.our-projects__title {
+  text-align: center;
+}
+.our-projects__subtitle {
+  text-align: center;
+  width: 735px;
+  margin: 0 auto;
+  margin-bottom: 95px;
+}
+.our-projects__catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.product-card {
+  position: relative;
+}
+.product-card__image {
+  margin-bottom: 25px;
+}
+.product-card__title {
+  font-family: DM Serif Display;
+  font-size: 25px;
+  line-height: 31.25px;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+.product-card__subtitle {
+  color: #4D5053;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.round-button {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  background: #F4F0EC url("../img/direction-right.svg") no-repeat center;
+  transition: all 0.3s;
+}
+.round-button:hover {
+  background-color: #4D5053;
+  background-image: url("../img/direction-right_white.svg");
+}
+.round-button_our-projects {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.round-button_articles-news {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+.round-button_articles-news-beige {
+  background-color: #fff;
+}
+
+.resons {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #F4F0EC;
+  display: flex;
+  justify-content: space-between;
+}
+.resons__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  border-right: 1px solid #CDA274;
+}
+.resons__item:last-child {
+  border-right: none;
+}
+.resons__number {
+  color: #CDA274;
+  font-family: DM Serif Display;
+  font-size: 85px;
+  line-height: 106.25px;
+  letter-spacing: 1.7px;
+}
+.resons__desc {
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.articles-news {
+  padding-top: 95px;
+  padding-bottom: 50px;
+}
+.articles-news__title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  line-height: 62.5px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.articles-news__subtitle {
+  width: 810px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.articles-news__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-card {
+  border-radius: 62px;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+  padding: 21px;
+  width: 380px;
+  position: relative;
+}
+.news-card__image-wrapp {
+  position: relative;
+}
+.news-card__image {
+  margin-bottom: 20px;
+}
+.news-card__genre {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+  border-radius: 8px 8px 8px 0px;
+  background: #FFF;
+  padding: 5px 10px;
+}
+.news-card__title {
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31.25px;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+.news-card__date {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+.news-card__beige {
+  background-color: #F4F0EC;
+}
+
+.site-footer {
+  padding-top: 50px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.site-footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.site-footer__column-1 {
+  padding-right: 100px;
+}
+.site-footer__column-2 {
+  padding-right: 380px;
+}
+.site-footer__column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.site-footer__tagline {
+  color: #4D5053;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  margin-bottom: 30px;
+}
+.site-footer__social {
+  display: flex;
+  gap: 55px;
+}
+.site-footer__list-title {
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31.25px;
+  margin-bottom: 25px;
+}
+.site-footer__list-links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.site-footer__item-link {
+  color: #4D5053;
+  line-height: 66px;
+  letter-spacing: 0.22px;
+}
+.site-footer__contacts-title {
+  color: #4D5053;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31.25px;
+}
+.site-footer__address {
+  color: #4D5053;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.site-footer__mail {
+  color: #4D5053;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+.site-footer__phone {
+  color: #4D5053;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}/*# sourceMappingURL=style.css.map */

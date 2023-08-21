@@ -1,0 +1,274 @@
+﻿@import 'vars'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Jost', sans-serif
+    font-size: 22px
+    font-style: normal
+    font-weight: 400
+    color: $mainBlackColor
+
+img
+    max-width: 100%
+    display: block
+
+a
+    text-decoration: none
+    color: $mainBlackColor
+
+.center
+    padding-left: calc(50% - $siteWidth/2)
+    padding-right: calc(50% - $siteWidth/2)
+
+.container-stripes
+    width: $siteWidth
+    margin: 0 auto
+    background: url("../img/background_stripes.svg") center no-repeat
+    background-size: cover
+
+.site-header
+    padding-top: 45px
+    padding-bottom: 30px
+    display: flex
+    justify-content: space-between
+    &__link-logo
+
+    &__link-list
+        display: flex
+        justify-content: space-between
+        gap: 45px
+    &__link-item
+        font-size: 20px
+.site-logo
+    width: 177px
+    height: 50px
+    &_footer
+        margin-bottom: 20px
+.main-banner
+    height: 758px
+    background: url("../img/main-banner.png")center no-repeat
+    background-size: 1200px
+    padding-top: 210px
+    padding-left: 50px
+    &__title
+        font-family: "DM Serif Display"
+        font-size: 65px
+        font-weight: 400
+        width: 435px
+        line-height: 81.25px
+        margin-bottom: 18px
+    &__subtitle
+        width: 435px
+        font-size: 22px
+        ine-height: 33px
+        letter-spacing: 0.22px
+        margin-bottom: 20px
+.button
+    padding: 26px 75px 26px 48px
+    border-radius: 18px
+    background: url("../img/arrow-right_brown.svg") #292F36 no-repeat center right 20%
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35)
+    color: #FFF
+    font-size: 18px
+    font-weight: 600
+    line-height: 22.5px
+    letter-spacing: 0.36px
+    display: inline-block
+    transition: all .3s
+    &:hover
+        background-position: center right 15%
+
+.our-projects
+    padding-top: 95px
+    padding-bottom: 95px
+    &__title
+        text-align: center
+    &__subtitle
+        text-align: center
+        width: 735px
+        margin: 0 auto
+        margin-bottom: 95px
+    &__catalog
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 55px
+.product-card
+    position: relative
+    &__image
+        margin-bottom: 25px
+    &__title
+        font-family: DM Serif Display
+        font-size: 25px
+        line-height: 31.25px
+        letter-spacing: 0.5px
+        margin-bottom: 5px
+    &__subtitle
+        color: $mainDarkGreyColor
+        line-height: 33px
+        letter-spacing: 0.22px
+.round-button
+    width: 70px
+    height: 70px
+    display: block
+    border-radius: 50%
+    background: $mainBeigeColor url("../img/direction-right.svg") no-repeat center
+    transition: all .3s
+    &:hover
+        background-color: $mainDarkGreyColor
+        background-image: url("../img/direction-right_white.svg")
+    &_our-projects
+        position: absolute
+        bottom: 0
+        right: 0
+    &_articles-news
+        width: 52px
+        height: 52px
+        position: absolute
+        bottom: 15px
+        right: 20px
+    &_articles-news-beige
+        background-color: #fff
+.resons
+    padding-top: 150px
+    padding-bottom: 150px
+    background-color: $mainBeigeColor
+    display: flex
+    justify-content: space-between
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 25%
+        border-right: 1px solid #CDA274
+    &__item:last-child
+        border-right: none
+    &__number
+        color: #CDA274
+        font-family: DM Serif Display
+        font-size: 85px
+        line-height: 106.25px
+        letter-spacing: 1.7px
+    &__desc
+        line-height: 33px
+        letter-spacing: 0.22px
+.articles-news
+    padding-top: 95px
+    padding-bottom: 50px
+    &__title
+        text-align: center
+        margin-bottom: 12px
+        font-family: DM Serif Display
+        font-size: 50px
+        line-height: 62.5px
+        letter-spacing: 1px
+        font-weight: 400
+    &__subtitle
+        width: 810px
+        display: block
+        margin: 0 auto
+        text-align: center
+        margin-bottom: 50px
+        line-height: 33px
+        letter-spacing: 0.22px
+    &__content
+        display: flex
+        justify-content: space-between
+
+.news-card
+    border-radius: 62px
+    border: 1px solid #E7E7E7
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25)
+    padding: 21px
+    width: 380px
+    position: relative
+    &__image-wrapp
+        position: relative
+    &__image
+        margin-bottom: 20px
+    &__genre
+        position: absolute
+        bottom: 20px
+        left: 20px
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.16px
+        text-transform: capitalize
+        border-radius: 8px 8px 8px 0px
+        background: #FFF
+        padding: 5px 10px
+    &__title
+        font-family: DM Serif Display
+        font-size: 25px
+        font-weight: 400
+        line-height: 31.25px
+        letter-spacing: 0.5px
+        margin-bottom: 25px
+    &__date
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.16px
+        text-transform: capitalize
+    &__beige
+        background-color: $mainBeigeColor
+
+.site-footer
+    padding-top: 50px
+    padding-bottom: 120px
+    display: flex
+    justify-content: space-between
+    &__column
+        display: flex
+        flex-direction: column
+    &__column-1
+        padding-right: 100px
+    &__column-2
+        padding-right: 380px
+    &__column-3
+        display: flex
+        flex-direction: column
+        gap: 25px
+    &__tagline
+        color: $mainDarkGreyColor
+        line-height: 33px
+        letter-spacing: 0.22px
+        margin-bottom: 30px
+    &__social
+        display: flex
+        gap: 55px
+    &__list-title
+        font-family: DM Serif Display
+        font-size: 25px
+        font-weight: 400
+        line-height: 31.25px
+        margin-bottom: 25px
+    &__list-links
+        display: flex
+        flex-direction: column
+        list-style-type: none
+    &__item-link
+        color: $mainDarkGreyColor
+        line-height: 66px
+        letter-spacing: 0.22px
+    &__contacts-title
+        color: $mainDarkGreyColor
+        font-family: DM Serif Display
+        font-size: 25px
+        font-weight: 400
+        line-height: 31.25px
+    &__address
+        color: $mainDarkGreyColor
+        line-height: 33px
+        letter-spacing: 0.22px
+    &__mail
+        color: $mainDarkGreyColor
+        line-height: 33px
+        letter-spacing: 0.22px
+    &__phone
+        color: $mainDarkGreyColor
+        line-height: 33px
+        letter-spacing: 0.22px
