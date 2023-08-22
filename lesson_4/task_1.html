@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leeson 4</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Вы разрабатываете приложение для отображения и сортировки списка товаров. У вас есть массив объектов products, где каждый объект представляет товар с его названием и ценой. Вам необходимо отобразить список товаров и предоставить пользователю возможность сортировать товары по цене (по возрастанию и по убыванию). -->
+        <ul>
+            <li v-for="product in products">
+                {{product.name}} {{product.price}}
+            </li>
+            <button @click="products.sort(priceSort('price'))">Сортировать по цене</button>
+        </ul>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                descending: true,
+                products: [
+                    {
+                        name: 'Яблоко',
+                        price: 15,
+                    },
+                    {
+                        name: 'Молоко',
+                        price: 5,
+                    },
+                    {
+                        name: 'Мясо',
+                        price: 50,
+                    },
+                    {
+                        name: 'Мясло',
+                        price: 30,
+                    },
+                ]
+            },
+            methods: {
+                priceSort(price) {
+                    if (this.descending === false) {
+                        this.descending = true;
+                        return (a, b) => a[price] > b[price] ? 1 : -1;
+                    } else {
+                        this.descending = false;
+                        return (a, b) => a[price] < b[price] ? 1 : -1;
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
