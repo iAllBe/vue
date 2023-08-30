@@ -1,1 +1,1 @@
-﻿console.log('test connect scripts.js');
+﻿
