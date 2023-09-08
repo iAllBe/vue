@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <IndexPage />
+    <ProductList />
   </div>
 </template>
 
 <script>
-import IndexPage from './components/IndexPage.vue'
+import ProductList from "./components/ProductList.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    IndexPage
-  }
-}
+    ProductList,
+  },
+};
 </script>
 
 <style>
